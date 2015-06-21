@@ -1,0 +1,1 @@
+This git is for CMPT 470 - 03's Technology Demonstration for jQuery.
