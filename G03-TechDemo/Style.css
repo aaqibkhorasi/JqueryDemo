@@ -1,7 +1,29 @@
 body{
 margin: auto;
+background-color: #f0f8ff;
+}
+
+div{
+padding: 5px;
+}
+
+div.filter_table{
+	margin-left:50px;
+	background-color: #eeeeee;
+	width: 50%;
 }
 
 div.filter_table div{
-	display:inline-block;
+display:inline-block;
+width:70px;
+}
+
+div.main{
+margin: auto;
+width: 70%;
+background-color:white;
+}
+
+table{
+margin:auto;
 }

@@ -8,15 +8,16 @@
 <script src="jquery-2.1.4.min.js" > </script>
 </head>
 <body>
-<h1>Filters</h1>
-<h3>All Columns</h3>
-<input id="filter_ALL" value="Search All Columns" />
-<h3>Column Filters</h3>
+<div class="main">
+<h1>Filter Demo</h1>
 <div class="filter_table">
-<div>Name</div> <div><input id="filter_Name" value="Search Name Columns" /></div>
-<div>Country</div> <div><input id="filter_Country" value="Search Country Column" /></div>
+<h3 style="margin-top:0px;">Column Filters</h3>
+<div>All</div> <div><input id="filter_ALL" value="Search All Columns" /></div><br />
+<div>Name</div> <div><input id="filter_Name" value="Search Name Columns" /></div><br />
+<div>Country</div> <div><input id="filter_Country" value="Search Country Column" /></div><br />
 <div>IP</div> <div><input id="filter_IP" value="Search IP Column" /><br /></div>
 </div>
+<br />
 <table>
 <tr><th>	id	</th><th>	first_name	</th><th>	last_name	</th><th>	email	</th><th>	country	</th><th>	ip_address	</th></tr>
  <tbody id="fbody">
@@ -1022,6 +1023,7 @@
 <tr><td>	1000	</td><td>	Anthony	</td><td>	Patterson	</td><td>	apattersonrr@istockphoto.com	</td><td>	Benin	</td><td>	146.124.159.245	</td></tr>
 </tbody>
 </table>
+</div>
 <script src="filter.js"> </script>
 </body>
 </html>
