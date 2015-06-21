@@ -4,13 +4,19 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Group 3 - jQuery Demonstration - Data Filter</title>
-<link rel="stylesheet" title="Q1" href="style1.css" type="text/css" />
-<link rel="alternate stylesheet" title="Q2" href="style2.css" type="text/css" />
-<script src="jquery-2.1.4.js" > </script>
+<link rel="stylesheet" title="Q1" href="Style.css" type="text/css" />
+<script src="jquery-2.1.4.min.js" > </script>
 </head>
-<body
-<h1>Data filtering</h1>
+<body>
+<h1>Filters</h1>
+<h3>All Columns</h3>
 <input id="filter_ALL" value="Search All Columns" />
+<h3>Column Filters</h3>
+<div class="filter_table">
+<div>Name</div> <div><input id="filter_Name" value="Search Name Columns" /></div>
+<div>Country</div> <div><input id="filter_Country" value="Search Country Column" /></div>
+<div>IP</div> <div><input id="filter_IP" value="Search IP Column" /><br /></div>
+</div>
 <table>
 <tr><th>	id	</th><th>	first_name	</th><th>	last_name	</th><th>	email	</th><th>	country	</th><th>	ip_address	</th></tr>
  <tbody id="fbody">

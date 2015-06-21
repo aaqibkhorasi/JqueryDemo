@@ -1,0 +1,7 @@
+body{
+margin: auto;
+}
+
+div.filter_table div{
+	display:inline-block;
+}
