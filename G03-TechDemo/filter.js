@@ -1,3 +1,11 @@
+function clear() {
+    this.value = "";
+    $(this).css({
+        "color": "black"
+    });
+    $(this).unbind('focus');
+}
+
 $("#filter_ALL").keyup(function () {
     //split the current value of searchInput
     var data = this.value.split(" ");
@@ -22,12 +30,10 @@ $("#filter_ALL").keyup(function () {
     })
     //show the rows that match.
     .show();
-}).focus(function () {
-    this.value = "";
-    $(this).css({
-        "color": "black"
-    });
-    $(this).unbind('focus');
-}).css({
-    "color": "#C0C0C0"
-});
+}).focus(clear).css({"color": "#C0C0C0"});
+
+$("#filter_Name").focus(clear).css({"color": "#C0C0C0"});
+
+$("#filter_Country").focus(clear).css({"color": "#C0C0C0"});
+
+$("#filter_IP").focus(clear).css({"color": "#C0C0C0"});
