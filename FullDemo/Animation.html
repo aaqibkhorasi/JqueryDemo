@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Animation</title>
+ 
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="Style/style.css" />
+</head>
+ 
+<body>
+    
+    <div class="main" style="height:700px;">
+        <div>
+            <ul id="menu">
+                <li><a href="Animation.html">Animation</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Filter.html">Filter</a></li>
+                <li><a href="Plugins.html">Plugins</a></li>
+                <li><a href="Timing.html">Timing</a></li>
+            </ul>
+        </div>
+        <h1>Animation Demo</h1>
+        <div style="width:300px;height:225px;">
+            <img src="img/dog01.jpg" alt="dog" id="firstImg" style="width:300px;height:225px;">
+            <img src="img/dog02.jpg" alt="dog" id="secondImg" style="width:300px;height:225px;display:none">
+        </div>
+        <div style="float:right;">
+            <input type="radio" name="animationOpt" value="hide">Hide <br />
+            <input type="radio" name="animationOpt" value="show">Show <br />
+            <input type="radio" name="animationOpt" value="fadeOut">Fade Out <br />
+            <input type="radio" name="animationOpt" value="fadeIn">Fade In <br />
+            <input type="radio" name="animationOpt" value="fadeTo">Fade to <br />
+            <input type="radio" name="animationOpt" value="slideDown">Slide down <br />
+            <input type="radio" name="animationOpt" value="slideUp">Slide up <br />
+            <input type="radio" name="animationOpt" value="animate">Animate <br />
+            <input type="radio" name="animationOpt" value="all">All in one <br />
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+  var curOption = "";
+  $(document).ready(function(){
+    $("input").click(function(){
+      curOption = $('input[name=animationOpt]:checked').val();
+      switch(curOption){
+        case "hide":
+          $("#firstImg").hide();
+          break;
+        case "show":
+          $("#firstImg").show();
+          break;
+        case "fadeOut":
+          $("#firstImg").fadeOut();
+          break;
+        case "fadeIn":
+          $("#firstImg").fadeIn();
+          break;
+        case "fadeTo":
+          $("#firstImg").fadeTo(1000, 0.5).fadeTo(1000, 1);
+          break;
+        case "slideDown":
+          $("#secondImg").slideDown("slow");
+          break;
+        case "slideUp":
+          $("#secondImg").slideUp("slow");
+          break;
+        case "animate":
+          $("#firstImg").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '450px',
+            width: '600px'
+          }, 2000).animate({
+            left: '250px',
+            opacity: '1',
+            height: '225px',
+            width: '300px'
+          }, 2000);
+          break;
+        case "all":
+          $("#firstImg").hide(100).show(100).fadeOut().fadeIn().fadeTo("slow", 0.5).fadeTo("slow",1).animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '450px',
+            width: '600px'
+          }, 2000).animate({
+            left: '250px',
+            opacity: '1',
+            height: '225px',
+            width: '300px'
+          }, 2000);;
+          $("#secondImg").slideDown("slow").slideUp("slow");
+          break;
+        default:
+          break;
+      }
+    });
+  });
+</script>

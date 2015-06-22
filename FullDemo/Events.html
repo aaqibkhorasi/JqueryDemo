@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binding and Unbinding Events with jQuery</title>
+    <link rel="stylesheet" href="Style/Style.css"/>
+    <link rel="stylesheet" href="Style/Style_Events.css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <style type='text/css'>
+    .highlighted {
+        background-color: #ffb;
+    }
+        
+    .highlighted .subHead {
+            color : red; 
+            font-weight: : bold; 
+            font-style: italic ; 
+            text-decoration:underline ;
+        }
+    .boxColor {
+            background-color: #E6E6E6; 
+            color : inherit; 
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <div>
+            <ul id="menu">
+                <li><a href="Animation.html">Animation</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Filter.html">Filter</a></li>
+                <li><a href="Plugins.html">Plugins</a></li>
+                <li><a href="Timing.html">Timing</a></li>
+            </ul>
+        </div>
+
+        <h1>Events Demo</h1>
+
+        <div id="slider"> HELLO THERE  </div>
+        <div id="wrap">
+            <div id="slideDown">Slider Option</div>
+            <div id="effect"> Effects  </div>
+        </div>
+        <hr />
+
+        <h2> ANIMATE AND OFFSET PROPERTY </h2>
+        <div id="scroller">
+            <ul>
+                <li class="search" data-target="here1"> Click here (Para1)</a>
+                <li class="search" data-target="here2"> Click here(Para2) </a>
+                <li class="search" data-target="here3"> Click here (Para3) </a>
+            </ul>
+        </div>
+
+        <hr />
+
+        <h1>Binding and Unbinding Events Example</h1>
+        <p>jQuery makes it simple to start and stop listening to events using the <code>on()</code> and <code>off()</code> functions. You just need to supply the name of the event you want to listen to and a function to handle it</p>
+        <div id="boxTarget" class="smallbox">Mouse over this box to see the effect. Click on it to unbind the mouseover.</div>
+        <br>
+        <hr />
+        <h2>KEY PRESS EVENT</h2>
+        <p>Type in this text field</p>
+        <input id="textEntry" type="text" />
+        <p>Last character typed: <span id="keyPress"></span></p>
+
+        <hr />
+        <div class="content">
+
+            <h2>Hovering Event</h2>
+            <p>Just hover over paragraph and see the effects</p>
+
+            <div class="subContent">
+                <h3>HTML Ipsum Presents 1 </h3>
+                <ul><li class="subHead">Friday, Nov 1st 2015 </li></ul>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+
+            <div class="subContent">
+                <h3>HTML Ipsum Presents 2 </h3>
+                <ul><li class="subHead">Thursday, Oct 20 2015</li></ul>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+
+            <div class="subContent">
+                <h3>HTML Ipsum Presents 3 </h3>
+                <ul><li class="subHead">Wednesday , June 11 2014</li></ul>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="content">
+            <div id="here1">
+                <h3>Para1</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+
+            <div id="here2">
+                <h3> Para2</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+            <div id="here3">
+                <h3> Para3</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+        </div>
+        <div id="up"> Click here to go up! </div>
+    </div>
+    <script src = "js/events.js"></script>
+
+    
+</body>
+</html>
