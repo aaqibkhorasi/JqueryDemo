@@ -39,12 +39,14 @@ $(function() {
     
     $("#up").click(goup);
     
+    //-------------------------------------------------------------
     //HOVER 
     $("div.subContent").hover(highlight) ;  
     $("div.subContent").click(function(){
         $(this).css("border", "2px solid red");
     }); 
     
+    //----------------------------------------------------------------
     // KEY PRESS EVENT 
     $("#textEntry").keypress(function(evt){
        $("#keyPress").text(String.fromCharCode(evt.charCode)); 
