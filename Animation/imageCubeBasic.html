@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Image Cube</title>
+<style>
+#basicCube { width: 400px; height: 350px; }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery.plugin.js"></script>
+<script src="jquery.imagecube.js"></script>
+<script>
+$(function () {
+	$('#basicCube').imagecube({speed: 700});
+});
+</script>
+</head>
+<body>
+<h1>jQuery Image Cube Basics</h1>
+<p>This page demonstrates the very basics of the
+	<a href="http://keith-wood.name/imageCube.html">jQuery Image Cube plugin</a>.
+</p>
+<p>For more detail see the <a href="http://keith-wood.name/imageCubeRef.html">documentation reference</a> page.</p>
+<div id="basicCube">
+	<img src="img/dog01.jpg" alt="dog01" title="dog01">
+	<img src="img/dog02.jpg" alt="dog02" title="dog02">
+	<img src="img/dog03.jpg" alt="dog03" title="dog03">
+	<img src="img/dog04.jpg" alt="dog04" title="dog04">
+	<img src="img/dog05.jpg" alt="dog05" title="dog05">
+</div>
+</body>
+</html>
