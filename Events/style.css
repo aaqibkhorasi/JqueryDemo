@@ -4,6 +4,7 @@ body {
     background-color:#CACACB;   
 }
 
+
 .smallbox {
     border: 1px solid gray;
     background-color: #454545;
@@ -24,12 +25,13 @@ body {
 
 #scroller li {
     list-style-type: none ;
+    padding-top: 2px ;
 }
 #wrap{
     width : 400px;
     height : 100px ;
 }
-#slideDown{
+#up, #slideDown{
     border: 1px solid gray;
     background-color: #555555;
     color: white; 
@@ -54,10 +56,13 @@ body {
     float : right; 
 
 }
+
 #slider{
     display:none; 
+    color : azure ; 
+    text-align: center;
     border : 2px solid #ffe;
-    background-color : #99FF33;
+    background-color : #383D3D;
     width: inherit ; 
     height :150px; 
 }
