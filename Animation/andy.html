@@ -9,16 +9,15 @@
 <body>
  
   <h1>Animation Demo</h1>
-  <div>
-    <img src= "img/dog01.jpg" alt="dog" id ="animatedTarget" style="width:50%;height:50%;">
+  <div style="width:300px;height:225px;">
+    <img src= "img/dog01.jpg" alt="dog" id ="animatedTarget" style="width:300px;height:225px;">
   </div>
   <div>
     <input type="radio" name="animationOpt" value="hide">Hide <br/>
-    <input type="radio" name="animationOpt" value="fadeIn">Fade In <br/>
+    <input type="radio" name="animationOpt" value="show">Show <br/>
     <input type="radio" name="animationOpt" value="fadeOut">Fade Out <br/>
+    <input type="radio" name="animationOpt" value="fadeIn">Fade In <br/>
     <input type="radio" name="animationOpt" value="fadeTo">Fade to <br/>
-    <input type="radio" name="animationOpt" value="zoom">Zoom <br/>
-    <input type="radio" name="animationOpt" value="drawer">Drawer <br/>
   </div>
  
 </body>
@@ -29,41 +28,21 @@
   $(document).ready(function(){
     $("input").click(function(){
       curOption = $('input[name=animationOpt]:checked').val();
-    });
-
-    $("img").hover(function(){
       switch(curOption){
         case "hide":
           $("img").hide();
           break;
-        case "fadeIn":
-          break;
-        case "fadeOut":
-          break;
-        case "fadeTo":
-          break;
-        case "zoom":
-          break;
-        case "drawer":
-          break;
-        default:
-          break;
-      }
-    },
-    function(){
-      switch(curOption){
-        case "hide":
+        case "show":
           $("img").show();
           break;
-        case "fadeIn":
-          break;
         case "fadeOut":
+          $("img").fadeOut();
+          break;
+        case "fadeIn":
+          $("img").fadeIn();
           break;
         case "fadeTo":
-          break;
-        case "zoom":
-          break;
-        case "drawer":
+          $("img").fadeTo("slow", 0.5);
           break;
         default:
           break;
