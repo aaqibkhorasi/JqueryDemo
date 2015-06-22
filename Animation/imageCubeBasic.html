@@ -2,25 +2,48 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
 <title>jQuery Image Cube</title>
 <style>
-#basicCube { width: 400px; height: 350px; }
+#basicCube { width: 500px; height: 450px; }
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="jquery.plugin.js"></script>
 <script src="jquery.imagecube.js"></script>
+  <script type="text/javascript" src="jquery-1.3.2.js"></script>
 <script>
 $(function () {
 	$('#basicCube').imagecube({speed: 700});
 });
 </script>
+
 </head>
 <body>
-<h1>jQuery Image Cube Basics</h1>
-<p>This page demonstrates the very basics of the
-	<a href="http://keith-wood.name/imageCube.html">jQuery Image Cube plugin</a>.
-</p>
-<p>For more detail see the <a href="http://keith-wood.name/imageCubeRef.html">documentation reference</a> page.</p>
+        <ul id="navigation">
+            <li class="icon01"><a href="" title="icon01"></a></li>
+            <li class="icon02"><a href="" title="icon02"></a></li>
+            <li class="icon03"><a href="" title="icon03"></a></li>
+            <li class="icon04"><a href="" title="icon04"></a></li>
+            <li class="icon05"><a href="" title="icon05"></a></li>
+            <li class="icon06"><a href="" title="icon06"></a></li>
+            <li class="icon07"><a href="" title="icon07"></a></li>
+        </ul>
+ <script type="text/javascript">
+    $(function() {
+        $('#navigation a').stop().animate({'marginLeft':'-85px'},1000);
+
+        $('#navigation > li').hover(
+            function () {
+                $('a',$(this)).stop().animate({'marginLeft':'-2px'},200);
+            },
+            function () {
+                $('a',$(this)).stop().animate({'marginLeft':'-85px'},200);
+            }
+        );
+    });
+</script>
+<h1>Plugins</h1>
+                                                              
 <div id="basicCube">
 	<img src="img/dog01.jpg" alt="dog01" title="dog01">
 	<img src="img/dog02.jpg" alt="dog02" title="dog02">
@@ -28,5 +51,7 @@ $(function () {
 	<img src="img/dog04.jpg" alt="dog04" title="dog04">
 	<img src="img/dog05.jpg" alt="dog05" title="dog05">
 </div>
+ 
+
 </body>
 </html>
