@@ -1,0 +1,17 @@
+#flashwords{
+	background: white; 
+	border: 2px solid #333; 
+	display: block; 
+	margin: 0 auto; 
+	padding: 10px;
+	width: 400px;
+}
+#flashwords p{
+	color: #333; 
+	display: none; 
+	font-weight: bold; 
+	text-align: center;
+}
+#flashwords p:first-child{
+	display: block;
+}
