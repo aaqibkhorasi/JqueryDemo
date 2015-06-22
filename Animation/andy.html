@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Animation</title>
+ 
+<script type="text/javascript" src="jquery-2.1.4.js"></script>
+ 
+</head>
+ 
+<body>
+ 
+  <h1>Animation Demo</h1>
+  <div>
+    <img src= "img/dog01.jpg" alt="dog" id ="animatedTarget" style="width:50%;height:50%;">
+  </div>
+  <div>
+    <input type="radio" name="animationOpt" value="hide">Hide <br/>
+    <input type="radio" name="animationOpt" value="fadeIn">Fade In <br/>
+    <input type="radio" name="animationOpt" value="fadeOut">Fade Out <br/>
+    <input type="radio" name="animationOpt" value="fadeTo">Fade to <br/>
+    <input type="radio" name="animationOpt" value="zoom">Zoom <br/>
+    <input type="radio" name="animationOpt" value="drawer">Drawer <br/>
+  </div>
+ 
+</body>
+</html>
+
+<script>
+  var curOption = "";
+  $(document).ready(function(){
+    $("input").click(function(){
+      curOption = $('input[name=animationOpt]:checked').val();
+    });
+
+    $("img").hover(function(){
+      switch(curOption){
+        case "hide":
+          $("img").hide();
+          break;
+        case "fadeIn":
+          break;
+        case "fadeOut":
+          break;
+        case "fadeTo":
+          break;
+        case "zoom":
+          break;
+        case "drawer":
+          break;
+        default:
+          break;
+      }
+    },
+    function(){
+      switch(curOption){
+        case "hide":
+          $("img").show();
+          break;
+        case "fadeIn":
+          break;
+        case "fadeOut":
+          break;
+        case "fadeTo":
+          break;
+        case "zoom":
+          break;
+        case "drawer":
+          break;
+        default:
+          break;
+      }
+    });
+  });
+</script>
