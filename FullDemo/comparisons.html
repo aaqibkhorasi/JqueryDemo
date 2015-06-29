@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="Style/Style.css" />
+<title>jQuery Demo</title>
+</head>
+<body>
+    <div class="main">
+	
+	    <div>
+            <ul id="menu">
+                <li><a href="Animation.html">Animation</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Filter.html">Filter</a></li>
+                <li><a href="Plugins.html">Plugins</a></li>
+                <li><a href="Timing.html">Timing</a></li>
+            </ul>
+        </div>
+	
+<p><b>CMPT 470 – Project Group 03
+<br>Technical Evaluation – Written Comparisons</b>
+</p>
+
+<h1>jQuery Alternatives</h1>
+
+<p>
+Many alternatives to jQuery exist, even though it is by far the most popular JavaScript library for web development. According to the statistics on W3Techs (Web Technology Surveys), jQuery is installed on almost two-thirds of the top websites. Among the runners up for popularity are Prototype and MooTools at about 2% and 4% usage respectively. Dojo Toolkit is another common library, and for a lightweight alternative, there is Minified.js. All of these JavaScript libraries are DOM manipulation-oriented application frameworks.
+</p>
+
+<h2>Prototype</h2>
+
+<p>
+Prototype gets its name from the fact that it extends, or prototypes, many native JavaScript objects such as string, arrays, and elements with additional methods. With Prototypal inheritance, any object can be extended. This makes Prototype not merely a library, but also a framework that helps to structure code and the interfaces between libraries. Prototype was developed for AJAX support in Ruby on Rails. Unlike jQuery, perhaps the most important difference is that Prototype extends the DOM. As with jQuery, the DOM methods for Prototype are also chainable. jQuery does not extend base classes and has a noConflict() function when using global variables, making it cooperate well with third-party code. However, since Prototype adds new objects to the global namespace and extends the base classes, conflicts can arise when multiple libraries are used for the same application. Resolving conflicts is therefore a major consideration when using Prototype with large applications.
+</p>
+
+<h2>MooTools</h2>
+
+<p>
+MooTools, which is short for My Object-Oriented Tools, is based on a Prototype plugin called Moo.fx and is designed to offer more control over DOM manipulation and Element objects. As hinted by its name, MooTools emphasizes object-oriented coding and the API looks and feels like JavaScript. Due to its prototypal design, MooTools is suited for both small and large applications. The core is lean and provides DOM manipulation similar to jQuery. Unlike jQuery which does not directly support inheritance, MooTools classes can be extended, so it is ideally suited to development which requires a mixture of DOM manipulation and coding in JavaScript. Native prototypes such as strings and arrays are increased from about a dozen in jQuery to about six dozen in the MooTools core. Many plugins for WordPress are developed with MooTools.
+</p>
+
+<h2>Dojo</h2>
+
+<p>
+The Dojo JavaScript library is self-described as a toolkit, because it offers more comprehensive tools for web development beyond the basics of DOM manipulation, AJAX, event handling, and effects. Unlike jQuery, Dojo is well-suited for larger and more complex applications for businesses. Dojo provides tools for data abstraction between the client and server, a large widget library with widget templates, and patterns for code structure. These components make it possible to create objects which are immediately complete with HTML, CSS, JavaScript, and AJAX. While jQuery uses a mix of Xpath and CSS for queries, Dojo uses the standard CSS 3 selectors. This extra functionality results in a larger core library than jQuery, and hence a heavier footprint for clients, as with all client-side scripting, the JavaScript library file must be downloaded and processed by the client. Compared to other JavaScript libraries, Dojo lacks documentation and is not suitable for beginners.
+</p>
+
+<h2>Minified.js</h2>
+
+<p>
+Minified.js is promoted as a super lightweight JavaScript library. Compared to jQuery and MooTools, the Minified.js library at a compressed size of 4 kb is around ten times smaller. The author, Tim Jansen, proclaims on his GitHub repository that the footprint for the full distribution will always be smaller than 8 kB, and the Minified Web version under 4kb. Even at this tiny size, Minified.js offers most of the functionality of jQuery, including DOM manipulation, event handling, AJAX calls (HTTP requests), JSON encoding and decoding, and basic animations and effects. Some utility functions are provided as modules, and these include collection helpers, date and number formatting and parsing, data arithmetic, string manipulation, and templates. If a web application only requires basic DOM manipulation and a few AJAX requests, then jQuery is not necessary. Since downloading and parsing the JavaScript library is a strain on the client and takes time, then Minified is preferable. One of key benefits of jQuery is its robust cross-browser support; however, this makes the library file a bit large for mobile. In this case, if a site is designed to only be viewed on iOS or Android, then Minified Web is a lightweight and fast alternative.
+</p>
+
+
+<h2>References</h2>
+
+<ul>
+<li><a href="http://jster.net/category/application-frameworks">JSter.net Application Frameworks</a>
+<li><a href="http://www.jscripters.com/popular-jquery-alternatives/">JScripters.com Popular jQuery Alternatives</a>
+<li><a href="http://prototypejs.org/learn/">Prototypejs.org</a>
+<li><a href="http://chipersoft.com/p/why-I-still-prefer-prototype/">Chipersoft Blog - Why I still prefer Prototype</a>
+<li><a href="http://thinkrelevance.com/blog/2009/01/12/why-i-still-prefer-prototype-to-jquery">Think Relevance Blog - Why I still prefer Prototype</a>
+<li><a href="http://www.jqueryvsmootools.com/">jQuery vs MooTools</a>
+<li><a href="http://www.quora.com/What-are-the-various-use-cases-for-YUI-jQuery-MooTools-and-Dojo-Toolkit">Quora - Use cases for YUI, jQuery, MooTools, and Dojo</a>
+<li><a href="http://dojotoolkit.org/reference-guide/1.7/quickstart/introduction/whydojo.html">Dojo Toolkit.org Reference Guide</a>
+<li><a href="http://thetascript.com/jqueryvsdojo/">jQuery vs Dojo</a>
+<li><a href="http://minifiedjs.com/">Minified.js</a>
+<ul>
+
+    </div>
+</body>
+</html>
