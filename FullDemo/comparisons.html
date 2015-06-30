@@ -19,35 +19,46 @@
             </ul>
         </div>
 	
-<p><b>CMPT 470 – Project Group 03
-<br>Technical Evaluation – Written Comparisons</b>
+<p>
+<h1>CMPT 470 - Project Group 03
+<br>Tech Evaluation – Written Comparisons</h1>
 </p>
 
-<h1>jQuery Alternatives</h1>
+<h2>jQuery</h2>
 
 <p>
-Many alternatives to jQuery exist, even though it is by far the most popular JavaScript library for web development. According to the statistics on W3Techs (Web Technology Surveys), jQuery is installed on almost two-thirds of the top websites. Among the runners up for popularity are Prototype and MooTools at about 2% and 4% usage respectively. Dojo Toolkit is another common library, and for a lightweight alternative, there is Minified.js. All of these JavaScript libraries are DOM manipulation-oriented application frameworks.
+jQuery is a JavaScript library file designed to simplify the client-side scripting of HTML. As with most JS libaries, one line of jQuery code should save a developer from writing many lines of actual JavaScript; the jQuery slogan is to "write less, do more". The file contains core DOM manipulation, event handling, effects such as animations, and AJAX functions; include the file in a web page with <code>&lt;script src="js/query-2.1.4.js"&gt;&lt;/script&gt;</code>. Even without the addition of plugins, a multitude of client-side browser manipulation can be produced, such as form validation, photo slideshows, accordions, and charts. Please browse our menu links above for demonstrations.
 </p>
 
-<h2>Prototype</h2>
+<p>
+One of the main advantages of jQuery over other libraries is its excellent cross-browser compatibility and popularity, and hence its strong open source community with great documentation and tutorials. The library itself is large and easily extensible with plugins. With any client-side technology, it reduces latency. However, this means the performance depends on the user's PC. Since the library file is large, it puts a strain on the client & server. Therefore, jQuery is not suited for heavy computation.
+</p>
+
+<h2>jQuery Alternatives</h2>
+
+<p>
+Many alternatives to jQuery exist, even though it is by far the most popular JavaScript library for web development. According to the statistics on W3Techs (Web Technology Surveys), jQuery is installed on almost two-thirds of the top websites. Among the runners up for popularity are Prototype and MooTools at about 2% and 4% usage respectively. Dojo Toolkit is another common library, and for a lightweight alternative, there is Minified.js. All of these JavaScript libraries (jQuery, Prototype, MooTools, Dojo, and Minified) are DOM manipulation-oriented application frameworks.
+</p>
+
+<h3>Prototype</h3>
 
 <p>
 Prototype gets its name from the fact that it extends, or prototypes, many native JavaScript objects such as string, arrays, and elements with additional methods. With Prototypal inheritance, any object can be extended. This makes Prototype not merely a library, but also a framework that helps to structure code and the interfaces between libraries. Prototype was developed for AJAX support in Ruby on Rails. Unlike jQuery, perhaps the most important difference is that Prototype extends the DOM. As with jQuery, the DOM methods for Prototype are also chainable. jQuery does not extend base classes and has a noConflict() function when using global variables, making it cooperate well with third-party code. However, since Prototype adds new objects to the global namespace and extends the base classes, conflicts can arise when multiple libraries are used for the same application. Resolving conflicts is therefore a major consideration when using Prototype with large applications.
 </p>
 
-<h2>MooTools</h2>
+<h3>MooTools</h3>
 
 <p>
 MooTools, which is short for My Object-Oriented Tools, is based on a Prototype plugin called Moo.fx and is designed to offer more control over DOM manipulation and Element objects. As hinted by its name, MooTools emphasizes object-oriented coding and the API looks and feels like JavaScript. Due to its prototypal design, MooTools is suited for both small and large applications. The core is lean and provides DOM manipulation similar to jQuery. Unlike jQuery which does not directly support inheritance, MooTools classes can be extended, so it is ideally suited to development which requires a mixture of DOM manipulation and coding in JavaScript. Native prototypes such as strings and arrays are increased from about a dozen in jQuery to about six dozen in the MooTools core. Many plugins for WordPress are developed with MooTools.
 </p>
 
-<h2>Dojo</h2>
+<h3>Dojo</h3>
 
 <p>
 The Dojo JavaScript library is self-described as a toolkit, because it offers more comprehensive tools for web development beyond the basics of DOM manipulation, AJAX, event handling, and effects. Unlike jQuery, Dojo is well-suited for larger and more complex applications for businesses. Dojo provides tools for data abstraction between the client and server, a large widget library with widget templates, and patterns for code structure. These components make it possible to create objects which are immediately complete with HTML, CSS, JavaScript, and AJAX. While jQuery uses a mix of Xpath and CSS for queries, Dojo uses the standard CSS 3 selectors. This extra functionality results in a larger core library than jQuery, and hence a heavier footprint for clients, as with all client-side scripting, the JavaScript library file must be downloaded and processed by the client. Compared to other JavaScript libraries, Dojo lacks documentation and is not suitable for beginners.
 </p>
 
-<h2>Minified.js</h2>
+<h3>Minified.js</h3>
 
 <p>
 Minified.js is promoted as a super lightweight JavaScript library. Compared to jQuery and MooTools, the Minified.js library at a compressed size of 4 kb is around ten times smaller. The author, Tim Jansen, proclaims on his GitHub repository that the footprint for the full distribution will always be smaller than 8 kB, and the Minified Web version under 4kb. Even at this tiny size, Minified.js offers most of the functionality of jQuery, including DOM manipulation, event handling, AJAX calls (HTTP requests), JSON encoding and decoding, and basic animations and effects. Some utility functions are provided as modules, and these include collection helpers, date and number formatting and parsing, data arithmetic, string manipulation, and templates. If a web application only requires basic DOM manipulation and a few AJAX requests, then jQuery is not necessary. Since downloading and parsing the JavaScript library is a strain on the client and takes time, then Minified is preferable. One of key benefits of jQuery is its robust cross-browser support; however, this makes the library file a bit large for mobile. In this case, if a site is designed to only be viewed on iOS or Android, then Minified Web is a lightweight and fast alternative.
